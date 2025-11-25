@@ -56,3 +56,18 @@ img{
 .centrar_texto{
     text-align: center;
 }
+
+/**header**/
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 69rem;
+    background-size: cover; /*esto es para que la imagen de fondo cubra todo el espacio del header*/
+    background-repeat: no-repeat; /*esto es para que la imagen de fondo no se repita*/
+    background-position: center center; /*esto es para centrar la imagen de fondo*/
+}
+.header__texto{
+    text-align: center; /*esto es para centrar el texto del header*/
+    color: var(--secundario); /*esto es para que el color del texto sea blanco*/
+    margin-top: 5rem; /*esto es para que el texto del header tenga un margen superior de 5rem*/
+}
