@@ -3,6 +3,7 @@
     --fuenteParrafos: 'PT Sans', sans-serif;
 
     --primario: #784D3C;
+    --gris: #e1e1e1;
     --secundario: #FFFFFF;
     --negro: #000000;
 }
@@ -115,4 +116,32 @@ img{
         column-gap: 4rem; /*esto es para que haya un espacio de 4rem entre las dos columnas*/
 
     }
+}
+
+.entrada{
+    border: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border: none;
+    margin-top: 0;
+}
+.boton{
+    display: block; /*esto es para que el boton se muestre en bloque*/
+    font-family: var(--fuenteHeading);/*esto es para que la fuente del boton sea la misma que la de los headings*/
+    color: var(--secundario); /*esto es para que el color del texto del boton sea blanco*/
+    text-align: center; /*esto es para centrar el texto del boton*/
+    padding: 1rem 3rem; /*esto es para que el boton tenga un padding de 1rem en la parte superior e inferior y de 3rem en los laterales*/
+    text-transform: uppercase; /*esto es para que el texto del boton se muestre en mayusculas*/
+    font-weight: 700; /*esto es para que el texto del boton tenga un grosor de 700*/
+    margin-bottom: 2rem;/*esto es para que el boton tenga un margen inferior de 2rem*/
+    border-radius: 0.5rem; /*esto es para que el boton tenga un borde redondeado de 1rem*/
+}
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+}
+.boton--primario{
+    background-color: var(--negro);
 }
