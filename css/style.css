@@ -31,6 +31,8 @@ a {
 }
 h1, h2, h3, h4{
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
+
 }
 h1{
     font-size: 4.8rem;
@@ -62,7 +64,7 @@ img{
 
 .header{
     background-image: url(../img/banner.jpg);
-    height: 69rem;
+    height: 50rem;
     background-size: cover; /*esto es para que la imagen de fondo cubra todo el espacio del header*/
     background-repeat: no-repeat; /*esto es para que la imagen de fondo no se repita*/
     background-position: center center; /*esto es para centrar la imagen de fondo*/
@@ -91,6 +93,7 @@ img{
 }
 .logo__nombre{
     font-weight: 400;
+    padding: 1.5rem;   /*esto es para que el logo tenga un padding de 2rem en la parte superior e inferior*/
 }
 .logo__bold{
     font-weight: 700;
@@ -107,6 +110,7 @@ img{
     text-align: center; /*esto es para centrar los enlaces de la navegacion*/
     font-size: 1.8rem; /*esto es para que el tamaño de la fuente de los enlaces de la navegacion sea de 1.8rem*/
     color: var(--secundario); /*esto es para que el color de los enlaces de la navegacion sea blanco*/
+    padding: 0 ; /*esto es para que los enlaces de la navegacion tengan un padding de 0.5rem en la parte superior e inferior*/
 }
 
 @media (min-width: 768px){
@@ -114,7 +118,6 @@ img{
         display: grid;
         grid-template-columns: 2fr 1fr;/*esto es para que el contenido principal se muestre en dos columnas, la primera columna ocupara el doble de espacio que la segunda*/
         column-gap: 4rem; /*esto es para que haya un espacio de 4rem entre las dos columnas*/
-
     }
 }
 
@@ -144,4 +147,30 @@ img{
 }
 .boton--primario{
     background-color: var(--negro);
+}
+.boton--secundario{
+    background-color: var(--primario);
+}
+.cursos {
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+}
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom: 0; /*esto es para que el ultimo widget no tenga margen inferior*/
+}
+.widget-curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.widget-curso__info{
+    font-family: var(--fuenteHeading);
+    font-weight: normal;
+
+}
+.widget-curso__label, .widget-curso__info{
+    font-size: 2rem;
 }
