@@ -47,10 +47,10 @@ img{
     max-width: 100%; /*el tamaño de las img sera del 100%*/
 }
 /**utilidades**/
-.no_margin{
+.no-margin{
     margin: 0;
 }
-.no_padding{
+.no-padding{
     padding: 0;
 }
 .centrar_texto{
@@ -70,4 +70,40 @@ img{
     text-align: center; /*esto es para centrar el texto del header*/
     color: var(--secundario); /*esto es para que el color del texto sea blanco*/
     margin-top: 5rem; /*esto es para que el texto del header tenga un margen superior de 5rem*/
+}
+@media (min-width: 768px){
+    .header__texto{
+        margin-top: 14rem; /*esto es para que el texto del header tenga un margen superior de 50rem en pantallas mayores a 768px*/
+    }
+}
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
+.logo{
+    color: var(--secundario);
+
+}
+.logo__nombre{
+    font-weight: 400;
+}
+.logo__bold{
+    font-weight: 700;
+}
+@media (min-width: 768px){
+    .navegacion{
+        display: flex; /*esto es para que la navegacion se muestre en flexbox*/
+        gap: 2rem; /*esto es para que haya un espacio de 2rem entre los enlaces de la navegacion*/
+    }
+    
+}
+.navegacion__enlace{
+    display: block; /*esto es para que los enlaces de la navegacion se muestren en bloque*/
+    text-align: center; /*esto es para centrar los enlaces de la navegacion*/
+    font-size: 1.8rem; /*esto es para que el tamaño de la fuente de los enlaces de la navegacion sea de 1.8rem*/
+    color: var(--secundario); /*esto es para que el color de los enlaces de la navegacion sea blanco*/
 }
