@@ -107,3 +107,12 @@ img{
     font-size: 1.8rem; /*esto es para que el tamaño de la fuente de los enlaces de la navegacion sea de 1.8rem*/
     color: var(--secundario); /*esto es para que el color de los enlaces de la navegacion sea blanco*/
 }
+
+@media (min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;/*esto es para que el contenido principal se muestre en dos columnas, la primera columna ocupara el doble de espacio que la segunda*/
+        column-gap: 4rem; /*esto es para que haya un espacio de 4rem entre las dos columnas*/
+
+    }
+}
