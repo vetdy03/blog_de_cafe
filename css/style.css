@@ -23,7 +23,7 @@ body{
 .contenedor{
     max-width: 120rem;
     width: 90%; /*esto es para que el contenedor tenga un ancho del 90% y no se vaya a los lados en pantallas grandes*/
-    
+
     margin: 0 auto;
 }
 a {
@@ -179,4 +179,14 @@ img{
     background-color: var(--negro);
     padding-bottom: 1rem; /*esto es para que el footer tenga un padding de 2rem en la parte inferior*/
     margin-top: 3rem; /*esto es para que el footer tenga un margen superior de 4rem*/
+}
+/*sobre nosotros*/
+@media (min-width: 768px){
+    .sobre-nosotros{
+        display: flex; /*esto es para que la sección sobre nosotros se muestre en flexbox */
+        gap: 2rem; /*esto es para que haya un espacio de 2rem entre las dos columnas*/
+    }
+    .sobre-nosotros__imagen, .sobre-nosotros__texto{
+        flex-basis: 50%;
+    }
 }
