@@ -140,11 +140,15 @@ img{
     font-weight: 700; /*esto es para que el texto del boton tenga un grosor de 700*/
     margin-bottom: 2rem;/*esto es para que el boton tenga un margen inferior de 2rem*/
     border-radius: 0.5rem; /*esto es para que el boton tenga un borde redondeado de 1rem*/
+    border: none; /*esto es para que el boton no tenga borde*/
 }
 @media (min-width: 768px){
     .boton{
         display: inline-block;
     }
+}
+.boton:hover{
+    cursor:pointer;/*esto es para que el cursor cambie a pointer cuando se pase por encima del boton*/
 }
 .boton--primario{
     background-color: var(--negro);
@@ -224,4 +228,30 @@ img{
     height: 40rem;
     background-size: cover;
     background-repeat:no-repeat;
+}
+
+.formulario{
+    background-color: var(--secundario);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    border-radius: 0.4rem;
+    padding: 2rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 1.5rem;/*esto es para que el formulario tenga un margen inferior de 2rem*/
+    gap: 1rem; /*esto es para que haya un espacio de 2rem entre el label y el campo*/
+
+}
+.campo__label{
+    flex: 0 0 9rem;/*esto hace que el label ocupe un espacio fijo de 9rem y el campo ocupe el resto*/
+    text-align: right;
+}
+.campo__field{
+    flex: 1; /*esto hace que el campo ocupe todo el espacio disponible*/
+    border: 1px solid var(--gris);
+    border-radius: 0.5rem;
+}
+.campo__field--textarea{
+    height: 20rem;
 }
