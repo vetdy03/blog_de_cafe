@@ -217,3 +217,10 @@ img{
 .curso__label, .widget-curso__info{
     font-size: 2rem;
 }
+
+/*contacto*/
+.contacto-bg{
+    background-image:url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+}
